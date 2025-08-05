@@ -13,7 +13,8 @@ async fn main() {
     let app = app();
 
     let ip = local_ip().unwrap();
-    let addr = format!("{}:8080", ip);
+    let addr = format!("{}:8080", ip); //for tor support, remove line 15, 16 and // in front of 17
+    //let addr = format!("127.0.0.1");
 
     let listener = tokio::net::TcpListener::bind(addr)
         .await
