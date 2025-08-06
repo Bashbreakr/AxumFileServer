@@ -12,11 +12,11 @@ pub async fn listfiles(dir: &str, relative_path: &str) -> Html<String> {
         <html lang="de">
         <head>
             <meta charset="UTF-8">
-            <title>Filmmusik Browser</title>
+            <title>FileServer</title>
             <link rel="stylesheet" href="/static/style.css">
         </head>
         <body>
-            <h1>🎵 Filmmusik</h1>
+            <h1>Dateien:</h1>
             <ul>
     "#);
 
